@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">KataplumApp</string>
+
+    // Navigation Bottom
+    <string name="nav_bottom_home">Parque</string>
+    <string name="nav_bottom_attraction">Atracciones</string>
+    <string name="nav_bottom_pass">Pases</string>
+    <string name="nav_bottom_map">Mapa</string>
+    <string name="nav_bottom_food">Alimentos</string>
+    
+    // Home Fragment
+    <!-- TEXT VIEWS -->
+    <string name="home_tv_greeting">BIENVENIDO A</string>
+    <string name="home_tv_title">¡KATAPLUM!</string>
+    <string name="home_tv_open">Abierto</string>
+    <string name="home_tv_close">Cerrado</string>
+    <string name="home_tv_tickets">Nuestros Accesos y Kataportes</string>
+    <string name="home_tv_tickets_label">Comprar Kataporte</string>
+    <string name="home_tv_complement">Complementos</string>
+    <string name="home_tv_complement_label">Aprovecha al máximo tus pases</string>
+    <string name="home_tv_events">Eventos especiales</string>
+    <string name="home_tv_events_info">Descubre nuestros eventos</string>
+    <string name="home_tv_attractions">Atracciones</string>
+    <string name="home_tv_attractions_info">Descubre nuestras atracciones</string>
+    <string name="home_tv_schedule">13:00 – 21:00 Hrs</string>
+
+    <!-- Buttons -->
+    <string name="home_btn_calendar">Calendario</string>
+    <string name="home_btn_map">Abrir Mapa</string>
+    <string name="home_btn_submit">Ingresa tu Kataporte</string>
+    <string name="home_btn_see_all">Ver todo</string>
+    
 </resources>

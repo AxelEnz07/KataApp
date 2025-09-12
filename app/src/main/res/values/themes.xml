@@ -2,7 +2,21 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.KataplumApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary_light_color</item>
+        <item name="colorPrimaryVariant">@color/primary_light_secondary_color</item>
+    </style>
+
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="postSplashScreenTheme">@style/Theme.KataplumApp</item>
+    </style>
+
+    <style name="Theme.App.Cardview" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
     </style>
 
     <style name="Theme.KataplumApp" parent="Base.Theme.KataplumApp" />

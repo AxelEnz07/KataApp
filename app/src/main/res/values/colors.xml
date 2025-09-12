@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#1B5E20</color>
+    <color name="green_light">#A5D6A7</color>
+
+    // Main Colors
+    <color name="primary_light_color">#D9535B</color>
+    <color name="primary_light_variant_color">#FAB5BB</color>
+    <color name="primary_light_secondary_color">#8E3EDF</color>
+    <color name="primary_light_secondary_variant_color">#451766</color>
+    <color name="primary_light_background_color">#FFFFFF</color>"
 </resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/primary_light_secondary_color"
+            app:shapeAppearance="@style/Theme.App.Cardview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="18sp"
+                android:paddingVertical="12sp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_greeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/home_tv_greeting"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tv_title"
+                    app:layout_constraintHorizontal_bias="0"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="@string/home_tv_title"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_greeting"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_status"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/green_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingVertical="3sp"
+                    android:paddingHorizontal="6sp"
+                    android:text="@string/home_tv_open"
+                    android:textColor="@color/green"
+                    android:textSize="13sp"
+                    android:drawableStart="@drawable/circle_dot"
+                    android:drawablePadding="5sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/home_tv_schedule"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toTopOf="@id/tv_status"
+                    app:layout_constraintStart_toEndOf="@id/tv_status"
+                    app:layout_constraintEnd_toStartOf="@id/btn_calendar"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_status"
+                    app:layout_constraintHorizontal_bias="0.15"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primary_light_variant_color"
+                    android:paddingHorizontal="12sp"
+                    android:paddingVertical="10sp"
+                    android:minHeight="0sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/home_btn_calendar"
+                    android:textColor="@color/primary_light_secondary_variant_color"
+                    app:cornerRadius="20sp"
+                    app:icon="@drawable/outline_calendar_month_24"
+                    app:iconTint="@color/primary_light_secondary_variant_color"
+                    app:layout_constraintTop_toTopOf="@id/tv_schedule"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_schedule"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    android:paddingVertical="10sp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/home_btn_submit"
+                    android:textSize="18sp"
+                    app:backgroundTint="@color/primary_light_secondary_variant_color"
+                    app:icon="@drawable/pass"
+                    app:iconGravity="textStart"
+                    app:cornerRadius="20sp"
+                    app:layout_constraintTop_toBottomOf="@id/btn_calendar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:scaleType="center"
+            android:src="@drawable/katamap"
+            app:layout_constraintTop_toBottomOf="@id/cardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12sp"
+            android:layout_marginVertical="12sp"
+            android:minHeight="0sp"
+            android:paddingHorizontal="10sp"
+            android:paddingVertical="8sp"
+            android:text="@string/home_btn_map"
+            android:textColor="@color/primary_light_secondary_variant_color"
+            app:cornerRadius="20sp"
+            app:icon="@drawable/arrow_right"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/primary_light_secondary_variant_color"
+            app:iconPadding="8sp"
+            app:backgroundTint="@color/primary_light_variant_color"
+            app:layout_constraintEnd_toEndOf="@id/mapView"
+            app:layout_constraintBottom_toBottomOf="@id/mapView"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

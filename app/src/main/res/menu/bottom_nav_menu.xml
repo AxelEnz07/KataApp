@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon"
+        android:iconTint="@color/primary_light_color"
+        android:checkable="false"
+        android:title="@string/nav_bottom_home" />
+
+    <item
+        android:id="@+id/navigation_attraction"
+        android:icon="@drawable/attractions"
+        android:iconTint="@color/primary_light_color"
+        android:checkable="false"
+        android:title="@string/nav_bottom_attraction"/>
+
+    <item
+        android:id="@+id/navigation_pass"
+        android:icon="@drawable/pass"
+        android:checkable="false"
+        android:title="@string/nav_bottom_pass"/>
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/location_icon"
+        android:checkable="false"
+        android:title="@string/nav_bottom_map"/>
+
+    <item
+        android:id="@+id/navigation_food"
+        android:icon="@drawable/food_icon"
+        android:checkable="false"
+        android:title="@string/nav_bottom_food"/>
+
+</menu>
