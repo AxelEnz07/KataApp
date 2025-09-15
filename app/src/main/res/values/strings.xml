@@ -7,7 +7,7 @@
     <string name="nav_bottom_pass">Pases</string>
     <string name="nav_bottom_map">Mapa</string>
     <string name="nav_bottom_food">Alimentos</string>
-    
+
     // Home Fragment
     <!-- TEXT VIEWS -->
     <string name="home_tv_greeting">BIENVENIDO A</string>
@@ -29,5 +29,7 @@
     <string name="home_btn_map">Abrir Mapa</string>
     <string name="home_btn_submit">Ingresa tu Kataporte</string>
     <string name="home_btn_see_all">Ver todo</string>
-    
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12sp"
+    app:cardCornerRadius="24sp"
+    tools:backgroundTint="@color/white"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:background="@color/white"
+        tools:context=".view.ui.AddRecorcardFragment">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:contentDescription="Cerrar Ventana"
+            android:id="@+id/button_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            app:icon="@drawable/close"
+            app:iconSize="32sp"
+            app:iconTint="@color/primary_light_color"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-16sp"
+            android:layout_below="@id/button_close"
+            android:layout_centerHorizontal="true"
+            android:text="Ingresar Kataporte"
+            android:textColor="@color/primary_light_secondary_color"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <EditText
+            android:id="@+id/edit_recorcard"
+            android:background="@drawable/background_edit_text"
+            android:digits="0123456789-"
+            android:maxLength="12"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:hint="Kataporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12sp"
+            android:padding="12sp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:fontFamily="sans-serif-medium" />
+
+        <EditText
+            android:id="@+id/edit_cvv"
+            android:background="@drawable/background_edit_text"
+            android:digits="0123456789"
+            android:maxLength="4"
+            android:importantForAutofill="yes"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_recorcard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12sp"
+            android:padding="12sp"
+            android:textColor="@color/black"
+            android:autofillHints=""
+            android:visibility="gone"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add_recorcard"
+            android:backgroundTint="@color/primary_light_secondary_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24sp"
+            android:layout_marginBottom="12sp"
+            android:layout_below="@id/edit_cvv"
+            android:paddingStart="24pt"
+            android:paddingEnd="24pt"
+            android:text="Guardar Kataporte"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="10sp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

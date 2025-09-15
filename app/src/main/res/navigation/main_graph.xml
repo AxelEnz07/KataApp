@@ -10,6 +10,23 @@
         android:id="@+id/homeFragment"
         android:name="com.grupodiniz.kataplumapp.ui.view.fragment.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_kataporteFragment"
+            app:destination="@id/kataporteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addKataporteFragment"
+            app:destination="@id/addKataporteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kataporteFragment"
+        android:name="com.grupodiniz.kataplumapp.ui.view.fragment.KataporteFragment"
+        android:label="KataporteFragment"
+        tools:layout="@layout/fragment_kataporte"/>
+    <dialog
+        android:id="@+id/addKataporteFragment"
+        android:name="com.grupodiniz.kataplumapp.ui.view.fragment.AddKataporteFragment"
+        android:label="AddKataporteFragment"
+        tools:layout="@layout/fragment_add_kataporte"/>
 
 </navigation>

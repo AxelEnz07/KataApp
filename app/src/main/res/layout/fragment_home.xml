@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/primary_light_secondary_color"
-            app:shapeAppearance="@style/Theme.App.Cardview"
+            app:shapeAppearance="@style/Theme.KataplumApp.Cardview.Bottom"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/primary_light_variant_color"
                     android:paddingHorizontal="12sp"
-                    android:paddingVertical="10sp"
+                    android:paddingVertical="10.5sp"
                     android:minHeight="0sp"
                     android:fontFamily="@font/roboto_medium"
                     android:text="@string/home_btn_calendar"
@@ -107,6 +107,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/tv_schedule"/>
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddKataporte"
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12sp"
@@ -129,10 +130,12 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/mapView"
+            android:background="@drawable/round_corner"
             android:layout_width="match_parent"
             android:layout_height="180sp"
             android:scaleType="center"
             android:src="@drawable/katamap"
+            app:shapeAppearanceOverlay="@style/Theme.KataplumApp.ShapeableImageView"
             app:layout_constraintTop_toBottomOf="@id/cardView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
@@ -145,7 +148,7 @@
             android:layout_marginVertical="12sp"
             android:minHeight="0sp"
             android:paddingHorizontal="10sp"
-            android:paddingVertical="8sp"
+            android:paddingVertical="10.5sp"
             android:text="@string/home_btn_map"
             android:textColor="@color/primary_light_secondary_variant_color"
             app:cornerRadius="20sp"

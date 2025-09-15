@@ -6,17 +6,107 @@
         <item name="colorPrimaryVariant">@color/primary_light_secondary_color</item>
     </style>
 
-    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+    <style name="Theme.KataplumApp.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/white</item>
         <item name="postSplashScreenTheme">@style/Theme.KataplumApp</item>
     </style>
 
-    <style name="Theme.App.Cardview" parent="">
+    <style name="Theme.KataplumApp.Cardview.Bottom" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSizeTopLeft">0dp</item>
         <item name="cornerSizeTopRight">0dp</item>
         <item name="cornerSizeBottomLeft">20dp</item>
         <item name="cornerSizeBottomRight">20dp</item>
+    </style>
+
+    <style name="Theme.KataplumApp.Cardview.Top" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="Theme.KataplumApp.Cardview.Regular" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+    </style>
+
+    // Text Views Size Font Family
+    <!-- Title Bold-->
+    <style name="Theme.KataplumApp.TextView.Title.Bold" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">23.8sp</item>
+    </style>
+
+    <!-- Title Extra Bold -->
+    <style name="Theme.KataplumApp.TextView.Title.ExtraBold" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textSize">23.8sp</item>
+    </style>
+
+    <!-- Subtitle -->
+    <style name="Theme.KataplumApp.TextView.Subtitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Regular -->
+    <style name="Theme.KataplumApp.TextView.Regular" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Condensed -->
+    <style name="Theme.KataplumApp.TextView.Condensed" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Light -->
+    <style name="Theme.KataplumApp.TextView.Light" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    // TextField
+    <!-- TextField Layout -->
+    <style name="Theme.KataplumApp.TextInput.Layout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@android:color/darker_gray</item>
+        <item name="boxStrokeWidthFocused">1sp</item>
+        <item name="boxCornerRadiusTopStart">12sp</item>
+        <item name="boxCornerRadiusTopEnd">12sp</item>
+        <item name="boxCornerRadiusBottomStart">12sp</item>
+        <item name="boxCornerRadiusBottomEnd">12sp</item>
+        <item name="hintEnabled">false</item>
+        <item name="errorTextAppearance">@font/roboto_bold</item>
+    </style>
+
+    <!-- Text Field Edit Text -->
+    <style name="Theme.KataplumApp.TextInput.EditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:padding">12sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    // Image View
+    <!-- Image View -->
+    <style name="Theme.KataplumApp.ShapeableImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14sp</item>
+    </style>
+
+    // Dialog View
+    <!-- Dialog Fragment View -->
+    <style name="Theme.KataplumApp.Dialog" parent="Theme.Material3.DayNight.Dialog">
+        <item name="android:windowMinWidthMajor">65%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
     </style>
 
     <style name="Theme.KataplumApp" parent="Base.Theme.KataplumApp" />
