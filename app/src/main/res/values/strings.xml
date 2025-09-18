@@ -1,15 +1,19 @@
 <resources>
     <string name="app_name">KataplumApp</string>
+    <string name="tools_attraction_name">El Trompo</string>
+    <string name="tools_attraction_category">Adrenalina</string>
+    <string name="tools_attraction_desc">¡Súbete a tu moto y haz trompos a toda velocidad! Esta atracción combina un impresionante movimiento de balanceo con giros mientras los pasajeros se encuentran en un asiento con forma de motocicleta. ¡Siente la adrenalina!</string>
 
-    // Navigation Bottom
+
+    <!-- TODO: Navigation Bottom -->
     <string name="nav_bottom_home">Parque</string>
     <string name="nav_bottom_attraction">Atracciones</string>
     <string name="nav_bottom_pass">Pases</string>
     <string name="nav_bottom_map">Mapa</string>
     <string name="nav_bottom_food">Alimentos</string>
 
-    // Home Fragment
-    <!-- TEXT VIEWS -->
+    <!-- TODO: Home Fragment -->
+    // TEXT VIEWS
     <string name="home_tv_greeting">BIENVENIDO A</string>
     <string name="home_tv_title">¡KATAPLUM!</string>
     <string name="home_tv_open">Abierto</string>
@@ -24,12 +28,11 @@
     <string name="home_tv_attractions_info">Descubre nuestras atracciones</string>
     <string name="home_tv_schedule">13:00 – 21:00 Hrs</string>
 
-    <!-- Buttons -->
+    // Buttons
     <string name="home_btn_calendar">Calendario</string>
     <string name="home_btn_map">Abrir Mapa</string>
     <string name="home_btn_submit">Ingresa tu Kataporte</string>
     <string name="home_btn_see_all">Ver todo</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_btn_view_attraction">Ver Atracción</string>
 
 </resources>
