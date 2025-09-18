@@ -4,6 +4,15 @@
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/primary_light_color</item>
         <item name="colorPrimaryVariant">@color/primary_light_secondary_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Brand Color -->
+        <item name="colorSecondary">@color/primary_light_color</item>
+        <item name="colorSecondaryVariant">@color/primary_light_secondary_color</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status Bar Color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme.KataplumApp.Splash" parent="Theme.SplashScreen">
