@@ -46,8 +46,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             style="@style/Theme.KataplumApp.TextView.Regular"
-            tools:text="@string/tools_attraction_name"
-            tools:visibility="gone"/>
+            tools:text="@string/tools_attraction_name" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/attractionCategory"

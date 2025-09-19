@@ -17,16 +17,27 @@
         <action
             android:id="@+id/action_homeFragment_to_addKataporteFragment"
             app:destination="@id/addKataporteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_attractionsFragment"
+            app:destination="@id/attractionsFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/kataporteFragment"
         android:name="com.grupodiniz.kataplumapp.ui.view.fragment.KataporteFragment"
         android:label="KataporteFragment"
         tools:layout="@layout/fragment_kataporte"/>
+
     <dialog
         android:id="@+id/addKataporteFragment"
         android:name="com.grupodiniz.kataplumapp.ui.view.fragment.AddKataporteFragment"
         android:label="AddKataporteFragment"
         tools:layout="@layout/fragment_add_kataporte"/>
+
+    <fragment
+        android:id="@+id/attractionsFragment"
+        android:name="com.grupodiniz.kataplumapp.ui.view.fragment.AttractionsFragment"
+        android:label="fragment_attractions"
+        tools:layout="@layout/fragment_attractions" />
 
 </navigation>

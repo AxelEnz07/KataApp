@@ -44,6 +44,11 @@
         <item name="cornerSizeBottomRight">20dp</item>
     </style>
 
+    <style name="Theme.KataplumApp.ShapeableImageView.Round" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14sp</item>
+    </style>
+
     // Text Views Size Font Family
     <!-- Title Bold-->
     <style name="Theme.KataplumApp.TextView.Title.Bold" parent="Widget.MaterialComponents.TextView">

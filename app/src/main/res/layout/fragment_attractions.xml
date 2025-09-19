@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.fragment.AttractionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="18sp"
+        android:paddingVertical="12sp"
+        tools:background="@android:color/holo_blue_light">
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/attractionSearch"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:hint="@string/attraction_hint_search"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdrenaline"
+            style="?attr/materialIconButtonFilledStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:gravity="center"
+            android:padding="18sp"
+            app:icon="@drawable/roller_coaster"
+            app:iconGravity="textStart"
+            app:iconSize="48sp"
+            app:layout_constraintTop_toBottomOf="@id/attractionSearch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnInfant"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInfant"
+            style="?attr/materialIconButtonFilledStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:gravity="center"
+            android:padding="18sp"
+            app:icon="@drawable/carousel_horse"
+            app:iconGravity="textStart"
+            app:iconSize="48sp"
+            app:layout_constraintTop_toBottomOf="@id/attractionSearch"
+            app:layout_constraintStart_toEndOf="@id/btnAdrenaline"
+            app:layout_constraintEnd_toStartOf="@id/btnFamily"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFamily"
+            style="?attr/materialIconButtonFilledStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:gravity="center"
+            android:padding="18sp"
+            app:icon="@drawable/balloon"
+            app:iconGravity="textStart"
+            app:iconSize="48sp"
+            app:layout_constraintTop_toBottomOf="@id/attractionSearch"
+            app:layout_constraintStart_toEndOf="@id/btnInfant"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/attractionAdrenaline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attraction_tv_adrenaline"
+            app:layout_constraintTop_toBottomOf="@id/btnAdrenaline"
+            app:layout_constraintStart_toStartOf="@id/btnAdrenaline"
+            app:layout_constraintEnd_toEndOf="@id/btnAdrenaline" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/attractionInfant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attraction_tv_infant"
+            app:layout_constraintTop_toBottomOf="@id/btnInfant"
+            app:layout_constraintStart_toStartOf="@id/btnInfant"
+            app:layout_constraintEnd_toEndOf="@id/btnInfant"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/attractionFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attraction_tv_family"
+            app:layout_constraintTop_toBottomOf="@id/btnFamily"
+            app:layout_constraintStart_toStartOf="@id/btnFamily"
+            app:layout_constraintEnd_toEndOf="@id/btnFamily"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/attractionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28sp"
+            app:layout_constraintTop_toBottomOf="@id/attractionFamily"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/item_attraction_list"
+            tools:itemCount="5"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

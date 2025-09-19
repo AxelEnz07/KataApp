@@ -13,7 +13,7 @@
     <string name="nav_bottom_food">Alimentos</string>
 
     <!-- TODO: Home Fragment -->
-    // TEXT VIEWS
+    // Text Views
     <string name="home_tv_greeting">BIENVENIDO A</string>
     <string name="home_tv_title">¡KATAPLUM!</string>
     <string name="home_tv_open">Abierto</string>
@@ -34,5 +34,13 @@
     <string name="home_btn_submit">Ingresa tu Kataporte</string>
     <string name="home_btn_see_all">Ver todo</string>
     <string name="home_btn_view_attraction">Ver Atracción</string>
+
+    <!-- TODO: Attraction Fragment -->
+    // Text View
+    <string name="attraction_tv_close">Cerrado</string>
+    <string name="attraction_tv_adrenaline">Adrenalina</string>
+    <string name="attraction_tv_family">Familiar</string>
+    <string name="attraction_tv_infant">Infantil</string>
+    <string name="attraction_hint_search">Buscar atracción</string>
 
 </resources>

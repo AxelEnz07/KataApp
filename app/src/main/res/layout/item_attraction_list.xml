@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="12sp"
+    android:paddingVertical="8sp"
+    tools:background="@android:color/darker_gray">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/attractionImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/trompo"
+        app:shapeAppearanceOverlay="@style/Theme.KataplumApp.ShapeableImageView.Round"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="120sp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/attractionCardStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/primary_light_variant_color"
+        app:cardCornerRadius="16sp"
+        app:cardElevation="0sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/attractionImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Theme.KataplumApp.TextView.Subtitle"
+            android:id="@+id/attractionStatus"
+            android:drawableStart="@drawable/place_closed"
+            android:drawableTint="@android:color/holo_red_dark"
+            android:drawablePadding="6sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="14sp"
+            android:layout_marginVertical="3sp"
+            android:text="@string/attraction_tv_close"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/attractionLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12sp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_min="60sp"
+        app:layout_constraintStart_toEndOf="@id/attractionImage"
+        app:layout_constraintTop_toBottomOf="@id/attractionCardStatus"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/eltrompologo" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/btn"
+        android:backgroundTint="@color/white"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chevron_next"
+        android:tint="@color/primary_light_secondary_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
